@@ -27,12 +27,21 @@
     }
 
     function navegacaoInicial() {
-        if (location.hash) {
-            navegarViaAjax(location.hash)
-        } else {
-            const primeiroLink = document.querySelector('[wm-link]')
-            navegarViaAjax(primeiroLink.hash)
-        }
+        let main = document.getElementsByTagName('main');
+        fetch('../paginas/fundamentos.html')
+            .then(function (resposta) {
+                if (resposta.ok) {
+                    return resposta.text();
+                } else {
+                    throw new Error('Erro ao carregar HTML');
+                }
+            })
+            .then(function (conteudo) {
+                section.innerHTML = conteudo;
+            })
+            .catch(function (erro) {
+                console.error(erro);
+            });
     }
 
     window.onhashchange = e => navegarViaAjax(location.hash)
