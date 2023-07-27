@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 function navegacaoInicial() {
-    let main = document.getElementsByTagName('main')[0];
+    let main = document.getElementById('main');
     fetch('../paginas/fundamentos.html')
         .then(function (resposta) {
             if (resposta.ok) {
@@ -12,8 +12,8 @@ function navegacaoInicial() {
                 throw new Error('Erro ao carregar HTML');
             }
         })
-        .then(function (main) {
-            main.innerHTML = main;
+        .then(function (conteudo) {
+            main.innerHTML = conteudo;
         })
         .catch(function (erro) {
             console.error(erro);
