@@ -2,47 +2,75 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bootstrap</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" wm-link="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" wm-link="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Exercícios
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" wm-link="#/paginas/fundamentos.html">Fundamentos</a>
-                <a class="dropdown-item" wm-link="#/paginas/grid.html">Grid</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" wm-link="#/paginas/componentes.html">Componentes</a>
-                <a class="dropdown-item" wm-link="#/paginas/formulario.html">Formulário</a>
-              </div>
-            </li>
-            
-          </ul>
-          
+  <div class="container-fluid font-family-ubuntu d-flex">
+    <div class="nav-fundo">
+    <div class="menu-navegacao">
+      <div class="logo d-flex" id="div-logo">
+        <img src="imgs/image-removebg-preview.png" alt="logo" id="logo">
+        <h3 id="name-logo">Hospital</h3>
+      </div>
+      <h5 class="title" id="titulo1">Dashboard</h5>
+      <nav>
+        <div class="inicio d-flex" id="dashboard-0">
+          <i class="fa-solid fa-house" id="icon-house"></i>
+          <input type="button" value="Dashboard" wm-folder class="border-0 bg-white">
+          <img src="imgs/chevron-down.svg" alt="seta" id="seta">
         </div>
+        <ul>
+          <li class="list-unstyled">Dashboard 1</li>
+          <li class="list-unstyled">Dashboard 2</li>
+        </ul>
+        <h5 class="title" id="dashboard-1">Applications</h5>
+        <ul>
+          <li class="list-unstyled">Pages <i><img src="imgs/chevron-right.svg" alt="seta"></i></li>
+          <li class="list-unstyled">Applications <i><img src="imgs/chevron-right.svg" alt="seta"></i></li>
+        </ul>
+        <h5 class="title" id="dashboard-2">Components</h5>
+        <ul>
+          <li class="list-unstyled">UI Component <i><img src="imgs/chevron-right.svg" alt=""></i></li>
+          <li class="list-unstyled">Widgets <i><img src="imgs/chevron-right.svg" alt=""></i></li>
+          <li class="list-unstyled">Forms <i><img src="imgs/chevron-right.svg" alt=""></i></li>
+          <li class="list-unstyled">Chats <i><img src="imgs/chevron-right.svg" alt=""></i></li>
+        </ul>
       </nav>
+    </div>
+  </div>
+    <div class="pesquisa">
+      <div class="barra-pesquisa d-flex">
+        <div class="input-group">
+        <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
+        <input type="text" value="Search here..." id="barra-pesquisa" class="form-control rounded">
+      </div>
+      </div>
+      <div class="icon">
+        <i class="fa-regular fa-bell"></i>
+        <i class="fa-regular fa-comment-dots"></i>
+        <div class="perfil">
+                     <img src="imgs/WIN_20230726_19_09_29_Pro.jpg" alt="foto" id="foto">
+ 
+        </div>
+      </div>
+    </div>
+  </div>
 
-      <main class="p-3" wm-link-destino></main>
+  <main class="p-3" wm-link-destino></main>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/navegacao.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/navegacao.js"></script>
 </body>
 
 </html>
