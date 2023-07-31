@@ -14,63 +14,102 @@
 </head>
 
 <body>
-  <div class="container-fluid font-family-ubuntu d-flex">
+  <div class="container-fluid">
     <div class="nav-fundo">
-    <div class="menu-navegacao">
-      <div class="logo d-flex" id="div-logo">
-        <img src="imgs/image-removebg-preview.png" alt="logo" id="logo">
-        <h3 id="name-logo">Hospital</h3>
-      </div>
-      <h5 class="title" id="titulo1">Dashboard</h5>
-      <nav>
-        <div class="inicio d-flex" id="dashboard-0">
-          <i class="fa-solid fa-house" id="icon-house"></i>
-          <input type="button" value="Dashboard" wm-folder class="border-0 bg-white">
-          <img src="imgs/chevron-down.svg" alt="seta" id="seta">
+      <div class="menu-navegacao">
+        <div class="logo d-flex" id="div-logo">
+          <img src="imgs/image-removebg-preview.png" alt="logo" id="logo">
+          <h3 id="name-logo">Hospital</h3>
         </div>
-        <ul>
-          <li class="list-unstyled">Dashboard 1</li>
-          <li class="list-unstyled">Dashboard 2</li>
-        </ul>
-        <h5 class="title" id="dashboard-1">Applications</h5>
-        <ul>
-          <li class="list-unstyled">Pages <i><img src="imgs/chevron-right.svg" alt="seta"></i></li>
-          <li class="list-unstyled">Applications <i><img src="imgs/chevron-right.svg" alt="seta"></i></li>
-        </ul>
-        <h5 class="title" id="dashboard-2">Components</h5>
-        <ul>
-          <li class="list-unstyled">UI Component <i><img src="imgs/chevron-right.svg" alt=""></i></li>
-          <li class="list-unstyled">Widgets <i><img src="imgs/chevron-right.svg" alt=""></i></li>
-          <li class="list-unstyled">Forms <i><img src="imgs/chevron-right.svg" alt=""></i></li>
-          <li class="list-unstyled">Chats <i><img src="imgs/chevron-right.svg" alt=""></i></li>
-        </ul>
-      </nav>
+        <h5 class="title" id="titulo1">Dashboard</h5>
+        <nav>
+          <div class="abas-nav">
+            <div class="icons">
+              <i class="fa-solid fa-house" id="icon-house"></i>
+            </div>
+            <li class="list-unstyled" id="dashboard-0">Dashboard</li>
+            <span class="seta"><img src="imgs/chevron-down.svg" alt="seta" ></span>
+          </div>
+          <ul>
+            <li class="list-unstyled" id="dashboard-1">Dashboard 1</li>
+            <li class="list-unstyled" id="dashboard-2">Dashboard 2</li>
+          </ul>
+          <h6 class="title" >Applications</h6>
+          <ul>
+            <div class="abas-nav">
+              <div class="icons">
+                <i class="fa-regular fa-file-lines"></i>
+              </div>
+              <li class="list-unstyled" id="pages">Pages </li>
+              <span class="seta"><img src="imgs/chevron-right.svg" alt="seta"></span>
+            </div>
+            <div class="abas-nav">
+              <div class="icons">
+                <i class="fa-solid fa-table-cells-large"></i>
+              </div>
+              <li class="list-unstyled" id="applications">Applications </li>
+              <span class="seta"><img src="imgs/chevron-right.svg" alt="seta"></span>
+            </div>
+          </ul>
+          <h6 class="title">Components </h6>
+          <ul>
+              <div class="abas-nav">
+                <div id="paleta">
+                 <img src="imgs/2206009.png" alt="paleta" class="paletta">
+                </div>
+                
+                <li class="list-unstyled" id="component">UI Component </li>
+                <span class="seta"><img src="imgs/chevron-right.svg" alt="seta"></span>
+              </div>
+              <div class="abas-nav">
+                <div id="paleta">
+                  <img src="imgs/2206009.png" alt="paleta" class="paletta">
+                 </div>
+                <li class="list-unstyled" id="widgets">Widgets</li>
+                <span class="seta"><img src="imgs/chevron-right.svg" alt="seta"></span>
+              </div>
+              <div class="abas-nav">
+                <div class="icons">
+                  <i class="fa-brands fa-wpforms"></i>
+                  <i class="fa-solid fa-user"  id="people"></i>
+                </div>
+                <li class="list-unstyled" id="forms">Forms </li>
+                <span class="seta"><img src="imgs/chevron-right.svg" alt="seta"></span>
+              </div>
+              <div class="abas-nav">
+                <div class="icons">
+                  <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <li class="list-unstyled" id="chats">Chats </li>
+                <span class="seta"><img src="imgs/chevron-right.svg" alt="seta"></span>
+              </div>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </div>
     <div class="pesquisa">
-      <div class="barra-pesquisa d-flex">
-        <div class="input-group">
-        <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
-        <input type="text" value="Search here..." id="barra-pesquisa" class="form-control rounded">
+      <div class="barra-pesquisa" id="barra-pesquisa">
+        <div class="input-group mr-4" id="group-1">
+          <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
+          <input type="text" placeholder="Search here..." class="border-0 bg-transparent" id="text">
+        </div>
       </div>
-      </div>
-      <div class="icon">
-        <i class="fa-regular fa-bell"></i>
-        <i class="fa-regular fa-comment-dots"></i>
+      <div class="icon-cabecalho">
+        <div class="notificacoes"> 
+          <i class="fa-regular fa-bell" id="bell"></i>
+          <i class="fa-regular fa-comment-dots" id="balao"></i>
+        </div>
         <div class="perfil">
-                     <img src="imgs/WIN_20230726_19_09_29_Pro.jpg" alt="foto" id="foto">
- 
+          <img src="imgs/WIN_20230726_19_09_29_Pro.jpg" alt="foto" id="foto">
         </div>
       </div>
     </div>
   </div>
 
-  <main class="p-3" id="main"></main>
+  <main class="p-3" wm-link-destino></main>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/navegacao.js"></script>
 </body>
-
-</html>
