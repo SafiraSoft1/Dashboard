@@ -13,7 +13,7 @@ html body {
     background-color: rgb(255, 255, 255);
     height: 800px;
     width: 25%;
-    box-shadow: 1px 1px 1px 1px rgba(158, 154, 154, 0.089);
+    box-shadow: 2px 2px 2px 2px rgba(12, 12, 12, 0.075);
     z-index: 1;
 }
 .conteudo{
@@ -164,6 +164,6 @@ html body {
 #main{
     background-color: #ecf4f4;
     width: 1088px;
-    margin-left: 230px;
+    margin-left: 255px;
     margin-top: -645px;
 }
