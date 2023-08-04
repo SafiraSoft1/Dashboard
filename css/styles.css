@@ -6,22 +6,22 @@ html body {
     font-family: Ubuntu;
 }
 .container-fluid{
-    margin-left: 0;
     display: flex;
-    margin: 0;
-}
-.nav-fundo{
-    background-color: rgb(255, 255, 255);
-    height: 100%;
-    width: 25%;
-    box-shadow: 1px 1px 1px 1px rgba(158, 154, 154, 0.719);
+    margin: 0 auto;
 }
 .menu-navegacao{
+    background-color: rgb(255, 255, 255);
+    height: 800px;
+    width: 25%;
+    box-shadow: 1px 1px 1px 1px rgba(158, 154, 154, 0.089);
+    z-index: 1;
+}
+.conteudo{
     margin-left: 30px;
+    margin-top: 60px;
 }
 #div-logo{
     align-items: center;
-    margin-top: 60px;
     margin-left: 15px;
 }
 #logo{
@@ -42,17 +42,18 @@ html body {
     font-weight: 700;
     font-size: 1.2em;
     margin-right: 100px;
-
 }
 #position{
     margin-left: 20px;
 }
  #dashboard-0{
     font-size: 1.1em;
+    color: #13a4d4;
 }
 #dashboard-1{
     margin-top: 30px;
     margin-left: 10px;
+    color: #13a4d4;
 }
 #dashboard-2{
     margin-top: 30px;
@@ -64,9 +65,9 @@ html body {
 }
 #people{
     font-size: 10px;
-position: relative;
-right: 6.5px;
-top: 2.5px;
+    position: relative;
+    right: 6.5px;
+    top: 2.5px;
 }
 #widgets{
     margin-left: -45px;
@@ -90,7 +91,6 @@ top: 2.5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 .paletta{
     display: flex;
@@ -141,6 +141,7 @@ top: 2.5px;
 }
 #text{
     font-size: 18px;
+    outline: none;
 }
 #foto{
     height: 60px;
@@ -161,7 +162,8 @@ top: 2.5px;
     margin-right: 25px;
 }
 #main{
+    background-color: #ecf4f4;
     width: 1088px;
-    margin-left: 264px;
-    margin-top: -627px;
+    margin-left: 230px;
+    margin-top: -645px;
 }
